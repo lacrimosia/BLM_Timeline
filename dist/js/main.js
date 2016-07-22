@@ -96,7 +96,7 @@
 
 	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(App).call(this, props));
 
-	        _this.information = data.events;
+	        _this.information = data.events[0].one;
 	        _this.title = data.title;
 	        return _this;
 	    }
@@ -38453,160 +38453,166 @@
 		"instructions": "View each event on the timeline by clicking the markers.",
 		"events": [
 			{
-				"title": "George Zimmerman Shoots Travon Martin",
-				"id": 0,
-				"media": {
-					"image": {
-						"src": "http://cdn.vidible.tv/prod/2016-05/12/57349fb9e4b0659110e5ae43_853x480_U_v1.png",
-						"credits": "http://cdn.vidible.tv/prod/2016-05/12/57349fb9e4b0659110e5ae43_853x480_U_v1.png",
-						"alt": "image alt",
-						"caption": "optional image caption"
+				"one": [
+					{
+						"title": "George Zimmerman Shoots Travon Martin",
+						"id": 0,
+						"media": {
+							"image": {
+								"src": "http://www.castles.org/images/sd6_small.jpg",
+								"credits": "yahoo.com",
+								"alt": "image alt",
+								"caption": "optional image caption"
+							},
+							"video": {
+								"embedSrc": "youtube video",
+								"alt": "Info about video"
+							}
+						},
+						"situation": {
+							"location": "chicago, IL",
+							"time": "If time is available"
+						},
+						"content": {
+							"text": "Information about the situation, Information about the situation, Information about the situation",
+							"source": "link where info was found"
+						},
+						"link": "www.yahoo.com",
+						"active": false
 					},
-					"video": {
-						"embedSrc": "youtube video",
-						"alt": "Info about video"
-					}
-				},
-				"situation": {
-					"location": "chicago, IL",
-					"time": "If time is available"
-				},
-				"content": {
-					"text": "Information about the situation, Information about the situation, Information about the situation",
-					"source": "link where info was found"
-				},
-				"link": "www.yahoo.com",
-				"active": false
-			},
-			{
-				"title": "Hoodies for Justice",
-				"id": 1,
-				"media": {
-					"image": {
-						"src": "http://www.castles.org/images/sd6_small.jpg",
-						"credits": "yahoo.com",
-						"alt": "image alt",
-						"caption": "optional image caption"
+					{
+						"title": "George Zimmerman Shoots Travon Martin",
+						"id": 1,
+						"media": {
+							"image": {
+								"src": "http://www.castles.org/images/sd6_small.jpg",
+								"credits": "yahoo.com",
+								"alt": "image alt",
+								"caption": "optional image caption"
+							},
+							"video": {
+								"embedSrc": "youtube video",
+								"alt": "Info about video"
+							}
+						},
+						"situation": {
+							"location": "chicago, IL",
+							"time": "If time is available"
+						},
+						"content": {
+							"text": "Information about the situation, Information about the situation, Information about the situation",
+							"source": "link where info was found"
+						},
+						"link": "www.yahoo.com",
+						"active": false
 					},
-					"video": {
-						"embedSrc": "youtube video",
-						"alt": "Info about video"
+					{
+						"title": "George Zimmerman Shoots Travon Martin",
+						"id": 2,
+						"media": {
+							"image": {
+								"src": "http://www.castles.org/images/sd6_small.jpg",
+								"credits": "yahoo.com",
+								"alt": "image alt",
+								"caption": "optional image caption"
+							},
+							"video": {
+								"embedSrc": "youtube video",
+								"alt": "Info about video"
+							}
+						},
+						"situation": {
+							"location": "chicago, IL",
+							"time": "If time is available"
+						},
+						"content": {
+							"text": "Information about the situation, Information about the situation, Information about the situation",
+							"source": "link where info was found"
+						},
+						"link": "www.yahoo.com",
+						"active": false
 					}
-				},
-				"situation": {
-					"location": "chicago, IL",
-					"time": "If time is available"
-				},
-				"content": {
-					"text": " A Million Hoodies For Justice Is Created To Support The Arrest Of George Zimmerman",
-					"source": "link where info was found"
-				},
-				"link": "www.yahoo.com",
-				"active": false
-			},
-			{
-				"title": "George Zimmerman Shoots Travon Martin",
-				"id": 2,
-				"media": {
-					"image": {
-						"src": "http://www.castles.org/images/sd6_small.jpg",
-						"credits": "yahoo.com",
-						"alt": "image alt",
-						"caption": "optional image caption"
+				],
+				"two": [
+					{
+						"title": "George Zimmerman Shoots Travon Martin",
+						"id": 3,
+						"media": {
+							"image": {
+								"src": "http://www.castles.org/images/sd6_small.jpg",
+								"credits": "yahoo.com",
+								"alt": "image alt",
+								"caption": "optional image caption"
+							},
+							"video": {
+								"embedSrc": "youtube video",
+								"alt": "Info about video"
+							}
+						},
+						"situation": {
+							"location": "chicago, IL",
+							"time": "If time is available"
+						},
+						"content": {
+							"text": "Information about the situation, Information about the situation, Information about the situation",
+							"source": "link where info was found"
+						},
+						"link": "www.yahoo.com",
+						"active": false
 					},
-					"video": {
-						"embedSrc": "youtube video",
-						"alt": "Info about video"
-					}
-				},
-				"situation": {
-					"location": "chicago, IL",
-					"time": "If time is available"
-				},
-				"content": {
-					"text": "Information about the situation, Information about the situation, Information about the situation",
-					"source": "link where info was found"
-				},
-				"link": "www.yahoo.com",
-				"active": false
-			},
-			{
-				"title": "George Zimmerman Shoots Travon Martin",
-				"id": 3,
-				"media": {
-					"image": {
-						"src": "http://www.castles.org/images/sd6_small.jpg",
-						"credits": "yahoo.com",
-						"alt": "image alt",
-						"caption": "optional image caption"
+					{
+						"title": "George Zimmerman Shoots Travon Martin",
+						"id": 4,
+						"media": {
+							"image": {
+								"src": "http://www.castles.org/images/sd6_small.jpg",
+								"credits": "yahoo.com",
+								"alt": "image alt",
+								"caption": "optional image caption"
+							},
+							"video": {
+								"embedSrc": "youtube video",
+								"alt": "Info about video"
+							}
+						},
+						"situation": {
+							"location": "chicago, IL",
+							"time": "If time is available"
+						},
+						"content": {
+							"text": "Information about the situation, Information about the situation, Information about the situation",
+							"source": "link where info was found"
+						},
+						"link": "www.yahoo.com",
+						"active": false
 					},
-					"video": {
-						"embedSrc": "youtube video",
-						"alt": "Info about video"
+					{
+						"title": "George Zimmerman Shoots Travon Martin",
+						"id": 5,
+						"media": {
+							"image": {
+								"src": "http://www.castles.org/images/sd6_small.jpg",
+								"credits": "yahoo.com",
+								"alt": "image alt",
+								"caption": "optional image caption"
+							},
+							"video": {
+								"embedSrc": "youtube video",
+								"alt": "Info about video"
+							}
+						},
+						"situation": {
+							"location": "chicago, IL",
+							"time": "If time is available"
+						},
+						"content": {
+							"text": "Information about the situation, Information about the situation, Information about the situation",
+							"source": "link where info was found"
+						},
+						"link": "www.yahoo.com",
+						"active": false
 					}
-				},
-				"situation": {
-					"location": "chicago, IL",
-					"time": "If time is available"
-				},
-				"content": {
-					"text": "Information about the situation, Information about the situation, Information about the situation",
-					"source": "link where info was found"
-				},
-				"link": "www.yahoo.com",
-				"active": false
-			},
-			{
-				"title": "George Zimmerman Shoots Travon Martin",
-				"id": 4,
-				"media": {
-					"image": {
-						"src": "http://www.castles.org/images/sd6_small.jpg",
-						"credits": "yahoo.com",
-						"alt": "image alt",
-						"caption": "optional image caption"
-					},
-					"video": {
-						"embedSrc": "youtube video",
-						"alt": "Info about video"
-					}
-				},
-				"situation": {
-					"location": "chicago, IL",
-					"time": "If time is available"
-				},
-				"content": {
-					"text": "Information about the situation, Information about the situation, Information about the situation",
-					"source": "link where info was found"
-				},
-				"link": "www.yahoo.com",
-				"active": false
-			},
-			{
-				"title": "George Zimmerman Shoots Travon Martin",
-				"id": 5,
-				"media": {
-					"image": {
-						"src": "http://www.castles.org/images/sd6_small.jpg",
-						"credits": "yahoo.com",
-						"alt": "image alt",
-						"caption": "optional image caption"
-					},
-					"video": {
-						"embedSrc": "youtube video",
-						"alt": "Info about video"
-					}
-				},
-				"situation": {
-					"location": "chicago, IL",
-					"time": "If time is available"
-				},
-				"content": {
-					"text": "Information about the situation, Information about the situation, Information about the situation",
-					"source": "link where info was found"
-				},
-				"link": "www.yahoo.com",
-				"active": false
+				]
 			}
 		]
 	};

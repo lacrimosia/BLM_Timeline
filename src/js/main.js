@@ -13,7 +13,7 @@ import Nav from './Nav';
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.information = data.events; 
+        this.information = data.events[0].one; 
         this.title = data.title;
     }
 

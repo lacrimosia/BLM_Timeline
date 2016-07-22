@@ -35,10 +35,12 @@ class StoryMap extends React.Component {
        			<Image src={b.media.image.src} responsive /> 			
        		</Col>
           	);
+
+		}.bind(this))
+    
  }
-}
-     </div>
-);
+  </div>
+     );
     }
 }
 

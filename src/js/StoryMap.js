@@ -10,13 +10,13 @@ import {Col, Image } from 'react-bootstrap';
 class StoryMap extends React.Component {
     constructor(props) {
         super(props);
-        this.events = this.props.data.slice(0, 3);
+        this.events = this.props.data;
     }
 
     render() {
         return (<div>
       {
-        this.events.map(function (b) { 
+        this.events.map(function (b) { 	
        	  if(b.id % 2 == 0){
        	  	return (
        		<Col md={4} key={b.id}>

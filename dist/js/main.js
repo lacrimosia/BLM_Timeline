@@ -21246,7 +21246,7 @@
 
 	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(StoryMap).call(this, props));
 
-	        _this.events = _this.props.data.slice(0, 3);
+	        _this.events = _this.props.data;
 	        return _this;
 	    }
 

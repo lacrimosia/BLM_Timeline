@@ -8,6 +8,7 @@ import StoryMap from './StoryMap';
 import Title from './Title';
 import Menu from './Menu';
 import { Grid, Row, Col } from 'react-bootstrap';
+import Nav from './Nav';
 
 class App extends React.Component {
     constructor(props) {
@@ -22,15 +23,26 @@ class App extends React.Component {
         <div>
         <Grid bsClass="container" fluid={true}>
             <Row>
-                <Col md={8} >
+                <Col md={10} >
                     <Title title={this.title} />
                 </Col>
-                <Col md={4}>
+                <Col md={2}>
                     <Menu />
                 </Col>
             </Row>
+        </Grid>
+        <Grid bsClass="container" fluid={true}>
             <Row>
-                <StoryMap data={this.information} />
+                <Col md={12} >
+                    <StoryMap data={this.information} />
+                </Col>
+            </Row>
+        </Grid>
+        <Grid bsClass="container" fluid={true}>
+            <Row>
+              <Col md={12}>
+                <Nav data={this.information} />
+              </Col>
             </Row>
         </Grid>
         </div>

@@ -10,7 +10,7 @@ import {Col, Image } from 'react-bootstrap';
 class StoryMap extends React.Component {
     constructor(props) {
         super(props);
-        this.events = this.props.data;
+        this.events = this.props.data.slice(0, 3);
     }
 
     render() {
@@ -19,7 +19,7 @@ class StoryMap extends React.Component {
         this.events.map(function (b) { 
        	  if(b.id % 2 == 0){
        	  	return (
-       		<Col md={3} key={b.id}>
+       		<Col md={4} key={b.id}>
        			<Image src={b.media.image.src} responsive />
        			<h1>{b.title}</h1>
        			<h4><i className="fa fa-map-marker"></i> {b.situation.location}</h4>
@@ -28,7 +28,7 @@ class StoryMap extends React.Component {
           	);
        	  }
        	  	return (
-       		<Col md={3} key={b.id}>
+       		<Col md={4} key={b.id}>
        		<h1>{b.title}</h1>
        			<h4><i className="fa fa-map-marker"></i> {b.situation.location}</h4>
        			<p>{b.content.text}</p>

@@ -79,6 +79,84 @@
 			},
 			"link": "www.yahoo.com",
 			"active": false
+		},
+		{
+			"title": "George Zimmerman Shoots Travon Martin",
+			"id": 3,
+			"media": {
+				"image": {
+					"src": "http://www.castles.org/images/sd6_small.jpg",
+					"credits": "yahoo.com",
+					"alt": "image alt",
+					"caption": "optional image caption"
+				},
+				"video": {
+					"embedSrc": "youtube video",
+					"alt": "Info about video"
+				}
+			},
+			"situation": {
+				"location": "chicago, IL",
+				"time": "If time is available"
+			},	
+			"content":{
+				"text": "Information about the situation, Information about the situation, Information about the situation",
+				"source": "link where info was found"
+			},
+			"link": "www.yahoo.com",
+			"active": false
+		},
+		{
+			"title": "George Zimmerman Shoots Travon Martin",
+			"id": 4,
+			"media": {
+				"image": {
+					"src": "http://www.castles.org/images/sd6_small.jpg",
+					"credits": "yahoo.com",
+					"alt": "image alt",
+					"caption": "optional image caption"
+				},
+				"video": {
+					"embedSrc": "youtube video",
+					"alt": "Info about video"
+				}
+			},
+			"situation": {
+				"location": "chicago, IL",
+				"time": "If time is available"
+			},	
+			"content":{
+				"text": "Information about the situation, Information about the situation, Information about the situation",
+				"source": "link where info was found"
+			},
+			"link": "www.yahoo.com",
+			"active": false
+		},
+		{
+			"title": "George Zimmerman Shoots Travon Martin",
+			"id": 5,
+			"media": {
+				"image": {
+					"src": "http://www.castles.org/images/sd6_small.jpg",
+					"credits": "yahoo.com",
+					"alt": "image alt",
+					"caption": "optional image caption"
+				},
+				"video": {
+					"embedSrc": "youtube video",
+					"alt": "Info about video"
+				}
+			},
+			"situation": {
+				"location": "chicago, IL",
+				"time": "If time is available"
+			},	
+			"content":{
+				"text": "Information about the situation, Information about the situation, Information about the situation",
+				"source": "link where info was found"
+			},
+			"link": "www.yahoo.com",
+			"active": false
 		}
 	]
 }

@@ -74,6 +74,10 @@
 
 	var _reactBootstrap = __webpack_require__(177);
 
+	var _Nav = __webpack_require__(398);
+
+	var _Nav2 = _interopRequireDefault(_Nav);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -111,19 +115,40 @@
 	                        null,
 	                        _react2.default.createElement(
 	                            _reactBootstrap.Col,
-	                            { md: 8 },
+	                            { md: 10 },
 	                            _react2.default.createElement(_Title2.default, { title: this.title })
 	                        ),
 	                        _react2.default.createElement(
 	                            _reactBootstrap.Col,
-	                            { md: 4 },
+	                            { md: 2 },
 	                            _react2.default.createElement(_Menu2.default, null)
 	                        )
-	                    ),
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    _reactBootstrap.Grid,
+	                    { bsClass: 'container', fluid: true },
 	                    _react2.default.createElement(
 	                        _reactBootstrap.Row,
 	                        null,
-	                        _react2.default.createElement(_StoryMap2.default, { data: this.information })
+	                        _react2.default.createElement(
+	                            _reactBootstrap.Col,
+	                            { md: 12 },
+	                            _react2.default.createElement(_StoryMap2.default, { data: this.information })
+	                        )
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    _reactBootstrap.Grid,
+	                    { bsClass: 'container', fluid: true },
+	                    _react2.default.createElement(
+	                        _reactBootstrap.Row,
+	                        null,
+	                        _react2.default.createElement(
+	                            _reactBootstrap.Col,
+	                            { md: 12 },
+	                            _react2.default.createElement(_Nav2.default, { data: this.information })
+	                        )
 	                    )
 	                )
 	            );
@@ -21221,7 +21246,7 @@
 
 	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(StoryMap).call(this, props));
 
-	        _this.events = _this.props.data;
+	        _this.events = _this.props.data.slice(0, 3);
 	        return _this;
 	    }
 
@@ -21235,7 +21260,7 @@
 	                    if (b.id % 2 == 0) {
 	                        return _react2.default.createElement(
 	                            _reactBootstrap.Col,
-	                            { md: 3, key: b.id },
+	                            { md: 4, key: b.id },
 	                            _react2.default.createElement(_reactBootstrap.Image, { src: b.media.image.src, responsive: true }),
 	                            _react2.default.createElement(
 	                                'h1',
@@ -21258,7 +21283,7 @@
 	                    }
 	                    return _react2.default.createElement(
 	                        _reactBootstrap.Col,
-	                        { md: 3, key: b.id },
+	                        { md: 4, key: b.id },
 	                        _react2.default.createElement(
 	                            'h1',
 	                            null,
@@ -38504,6 +38529,84 @@
 				},
 				"link": "www.yahoo.com",
 				"active": false
+			},
+			{
+				"title": "George Zimmerman Shoots Travon Martin",
+				"id": 3,
+				"media": {
+					"image": {
+						"src": "http://www.castles.org/images/sd6_small.jpg",
+						"credits": "yahoo.com",
+						"alt": "image alt",
+						"caption": "optional image caption"
+					},
+					"video": {
+						"embedSrc": "youtube video",
+						"alt": "Info about video"
+					}
+				},
+				"situation": {
+					"location": "chicago, IL",
+					"time": "If time is available"
+				},
+				"content": {
+					"text": "Information about the situation, Information about the situation, Information about the situation",
+					"source": "link where info was found"
+				},
+				"link": "www.yahoo.com",
+				"active": false
+			},
+			{
+				"title": "George Zimmerman Shoots Travon Martin",
+				"id": 4,
+				"media": {
+					"image": {
+						"src": "http://www.castles.org/images/sd6_small.jpg",
+						"credits": "yahoo.com",
+						"alt": "image alt",
+						"caption": "optional image caption"
+					},
+					"video": {
+						"embedSrc": "youtube video",
+						"alt": "Info about video"
+					}
+				},
+				"situation": {
+					"location": "chicago, IL",
+					"time": "If time is available"
+				},
+				"content": {
+					"text": "Information about the situation, Information about the situation, Information about the situation",
+					"source": "link where info was found"
+				},
+				"link": "www.yahoo.com",
+				"active": false
+			},
+			{
+				"title": "George Zimmerman Shoots Travon Martin",
+				"id": 5,
+				"media": {
+					"image": {
+						"src": "http://www.castles.org/images/sd6_small.jpg",
+						"credits": "yahoo.com",
+						"alt": "image alt",
+						"caption": "optional image caption"
+					},
+					"video": {
+						"embedSrc": "youtube video",
+						"alt": "Info about video"
+					}
+				},
+				"situation": {
+					"location": "chicago, IL",
+					"time": "If time is available"
+				},
+				"content": {
+					"text": "Information about the situation, Information about the situation, Information about the situation",
+					"source": "link where info was found"
+				},
+				"link": "www.yahoo.com",
+				"active": false
 			}
 		]
 	};
@@ -48852,6 +48955,78 @@
 	return jQuery;
 	} );
 
+
+/***/ },
+/* 398 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactHotkey = __webpack_require__(393);
+
+	var _reactHotkey2 = _interopRequireDefault(_reactHotkey);
+
+	var _reactNativeListener = __webpack_require__(395);
+
+	var _reactNativeListener2 = _interopRequireDefault(_reactNativeListener);
+
+	var _reactBootstrap = __webpack_require__(177);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var $ = __webpack_require__(397);
+	// fixes e.preventDefault Problems
+	_reactHotkey2.default.activate();
+
+	var Nav = function (_React$Component) {
+	    _inherits(Nav, _React$Component);
+
+	    function Nav(props) {
+	        _classCallCheck(this, Nav);
+
+	        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Nav).call(this, props));
+
+	        _this.events = _this.props.data;
+	        return _this;
+	    }
+
+	    _createClass(Nav, [{
+	        key: 'render',
+	        value: function render() {
+	            return _react2.default.createElement(
+	                'div',
+	                null,
+	                this.events.map(function (a) {
+	                    return _react2.default.createElement(
+	                        _reactBootstrap.Button,
+	                        { key: a.id },
+	                        _react2.default.createElement('i', { className: 'fa fa-circle' })
+	                    );
+	                }.bind(this))
+	            );
+	        }
+	    }]);
+
+	    return Nav;
+	}(_react2.default.Component);
+
+	exports.default = Nav;
 
 /***/ }
 /******/ ]);

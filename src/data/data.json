@@ -3,8 +3,7 @@
 	"instructions": "View each event on the timeline by clicking the markers.",
 	"events":[
 		{
-			"one": [{
-			"title": "George Zimmerman Shoots Travon Martin",
+			"title": "George Zimmerman Shoots Travon Martin1",
 			"id": 0,
 			"media": {
 				"image": {
@@ -30,7 +29,7 @@
 			"active": false
 		},
 		{
-			"title": "George Zimmerman Shoots Travon Martin",
+			"title": "George Zimmerman Shoots Travon Martin2",
 			"id": 1,
 			"media": {
 				"image": {
@@ -80,8 +79,8 @@
 			},
 			"link": "www.yahoo.com",
 			"active": false
-		}],
-		"two": [{
+		},
+		{
 			"title": "George Zimmerman Shoots Travon Martin",
 			"id": 3,
 			"media": {
@@ -158,7 +157,6 @@
 			},
 			"link": "www.yahoo.com",
 			"active": false
-		}]
 		}
 		
 	]

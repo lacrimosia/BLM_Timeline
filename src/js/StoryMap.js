@@ -5,41 +5,27 @@ const $ = require('jquery');
 import hotkey from 'react-hotkey';
 import NativeListener from 'react-native-listener'; // fixes e.preventDefault Problems
 hotkey.activate();
-import {Col, Image } from 'react-bootstrap';
+import {Col, Image, Button } from 'react-bootstrap';
 
 class StoryMap extends React.Component {
     constructor(props) {
         super(props);
-        this.events = this.props.data;
     }
 
     render() {
-        return (<div>
-      {
-        this.events.map(function (b) { 	
-       	  if(b.id % 2 == 0){
-       	  	return (
-       		<Col md={4} key={b.id}>
-       			<Image src={b.media.image.src} responsive />
-       			<h1>{b.title}</h1>
-       			<h4><i className="fa fa-map-marker"></i> {b.situation.location}</h4>
-       			<p>{b.content.text}</p>
+        return (<div key={this.props.accessKey}>
+       		<Col md={12} >
+       			<h2>{this.props.title}</h2>
        		</Col>
-          	);
-       	  }
-       	  	return (
-       		<Col md={4} key={b.id}>
-       		<h1>{b.title}</h1>
-       			<h4><i className="fa fa-map-marker"></i> {b.situation.location}</h4>
-       			<p>{b.content.text}</p>
-       			<Image src={b.media.image.src} responsive /> 			
+       		<Col md={6} >
+       			<Image src={this.props.imageSrc} responsive /> 				
        		</Col>
-          	);
-
-		}.bind(this))
-    
- }
-  </div>
+       		<Col md={6}>
+       			<h3><i className="fa fa-map-marker"></i> {this.props.location}</h3>
+       			<p>{this.props.text}</p>
+       			<Button bsSize="large"><i className="fa fa-link"></i> More Information</Button> 
+       		</Col>
+  		</div>
      );
     }
 }

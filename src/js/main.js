@@ -13,16 +13,15 @@ import Nav from './Nav';
 class App extends React.Component {
     constructor(props) {
         super(props);
-        this.information = data.events[0].one; 
-        this.title = data.title;
+       this.information = data.events; 
+       this.title = data.title;
     }
-
 
     render() {
         return (
         <div>
         <Grid bsClass="container" fluid={true}>
-            <Row>
+            <Row className="timeline-header">
                 <Col md={10} >
                     <Title title={this.title} />
                 </Col>
@@ -31,18 +30,30 @@ class App extends React.Component {
                 </Col>
             </Row>
         </Grid>
-        <Grid bsClass="container" fluid={true}>
+        <Grid bsClass="container" fluid={false}>
             <Row>
-                <Col md={12} >
-                    <StoryMap data={this.information} />
+                <Col md={12} className="window">
+                {
+                    this.information.map(function (b) {  
+                     if(b.id===0){
+                        return (
+                        <div key={b.id} >
+                            <StoryMap title={b.title} accessKey={b.id} location={b.situation.location} text={b.content.text} imageSrc={b.media.image.src} />
+                        </div>
+                        );
+                     }
+                  }.bind(this))
+                }
                 </Col>
-            </Row>
-        </Grid>
-        <Grid bsClass="container" fluid={true}>
-            <Row>
-              <Col md={12}>
-                <Nav data={this.information} />
-              </Col>
+                <Col md={12}>
+                {
+                    this.information.map(function (b) {    
+                        return (
+                        <Nav accessId={b.id} key={b.id}/> 
+                        );
+                    }.bind(this))
+                }
+                </Col>
             </Row>
         </Grid>
         </div>

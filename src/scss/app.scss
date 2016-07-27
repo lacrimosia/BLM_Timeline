@@ -1,0 +1,44 @@
+// React Timeline
+
+// Color Palette
+$darkBlue: #1B1F4E;
+$blue: #393F7D;
+$pink: #AA0CE9;
+$red: #D4001D;
+$orange: #ED5901;
+$yellow: #EF9719;
+$darkGray: #141414;
+$gray: #222222;
+$lightGray: #BCBCBC;
+$white: #ffffff;
+
+body{
+ background: $white;
+
+}
+
+Button{
+    background: $red !important;
+    color: $white !important;
+    border: none !important;
+}
+
+.timeline-header{
+    background: $darkGray;
+    color: $lightGray;
+}
+
+.timeline-buttons{
+    background: none !important;
+    float: left;
+    &:visited{
+        background: none !important;
+    }
+}
+
+.timeline-buttons i{
+    color: $red;
+    &:hover{
+        color: $pink !important;
+    }
+}

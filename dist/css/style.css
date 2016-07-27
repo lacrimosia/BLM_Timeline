@@ -1,0 +1,22 @@
+body {
+  background: #ffffff; }
+
+Button {
+  background: #D4001D !important;
+  color: #ffffff !important;
+  border: none !important; }
+
+.timeline-header {
+  background: #141414;
+  color: #BCBCBC; }
+
+.timeline-buttons {
+  background: none !important;
+  float: left; }
+  .timeline-buttons:visited {
+    background: none !important; }
+
+.timeline-buttons i {
+  color: #D4001D; }
+  .timeline-buttons i:hover {
+    color: #AA0CE9 !important; }
